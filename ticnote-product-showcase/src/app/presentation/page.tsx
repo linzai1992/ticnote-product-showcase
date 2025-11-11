@@ -292,7 +292,7 @@ const slides = [
         image: '/cross-file-search-new.png'
       },
       {
-        id: 3,
+        id: 4,
         name: '知识库管理',
         title: '关联分析',
         description: 'AI自动分析文件间的关联关系，构建知识图谱，发现潜在联系',
@@ -1671,14 +1671,19 @@ const slides = [
             </div>
             
             {/* 产品全家福展示 */}
-            <div className="flex justify-center mb-16">
-              <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-                <img 
-                  src={slide.partnership?.image} 
-                  alt="TicNote产品生态" 
-                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl"
-                />
-                <p className="text-center text-gray-300 mt-4 text-lg">TicNote AI智能生态全产品线</p>
+            <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 mb-16">
+              <div className="text-center space-y-8">
+                <div>
+                  <h3 className="text-4xl font-bold text-white mb-4">TicNote AI智能生态全产品线</h3>
+                </div>
+                
+                <div className="flex justify-center">
+                  <img 
+                    src={slide.partnership?.image} 
+                    alt="TicNote产品生态" 
+                    className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl"
+                  />
+                </div>
               </div>
             </div>
             
@@ -1695,7 +1700,7 @@ const slides = [
                     <img 
                       src="/cross-device-collaboration.jpeg" 
                       alt="跨设备协同能力展示" 
-                      className="w-full max-w-3xl mx-auto rounded-2xl shadow-2xl"
+                      className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl"
                     />
                   </div>
                 </div>
@@ -1705,7 +1710,7 @@ const slides = [
                     <div className="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center">
                       <span className="text-2xl">📱</span>
                     </div>
-                    <span className="text-white font-semibold">手机端录音</span>
+                    <span className="text-white font-semibold">移动端录音</span>
                     <span className="text-cyan-200 text-sm text-center">随时随地捕捉灵感</span>
                   </div>
                   
