@@ -4,7 +4,14 @@ import { useState, useEffect } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
 // 配图弹窗组件
-const ImageModal = ({ isOpen, onClose, image, title }) => {
+interface ImageModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  image: string | null;
+  title: string;
+}
+
+const ImageModal = ({ isOpen, onClose, image, title }: ImageModalProps) => {
   if (!isOpen || !image) return null;
   
   return (
@@ -242,7 +249,7 @@ const slides = [
         image: '/podcast-feature.png'
       }
     ],
-    gifUrl: '/shadow会议纪要.gif',
+    gifUrl: '/shadow-meeting-demo.gif',
     stats: {
       features: '6大功能',
       processing: '一键处理',
@@ -480,7 +487,7 @@ const slides = [
     subtitle: '无限合作可能，共创智能未来',
     description: '期待与联想集团深度合作，共同打造下一代智能办公解决方案',
     partnership: {
-      image: '/ticnote-family.jpg',
+      image: '/final-page-image.jpeg',
       opportunities: [
         {
           icon: '💼',
@@ -1672,6 +1679,60 @@ const slides = [
                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl"
                 />
                 <p className="text-center text-gray-300 mt-4 text-lg">TicNote AI智能生态全产品线</p>
+              </div>
+            </div>
+            
+            {/* 跨设备协同能力展示 */}
+            <div className="bg-gradient-to-r from-cyan-800/30 to-blue-800/30 backdrop-blur-sm rounded-3xl p-12 border border-white/10 mb-16">
+              <div className="text-center space-y-8">
+                <div>
+                  <h3 className="text-4xl font-bold text-white mb-4">🔗 跨设备协同生态</h3>
+                  <p className="text-xl text-cyan-200">无缝连接，智能协作，打造全场景AI办公体验</p>
+                </div>
+                
+                <div className="flex justify-center mb-8">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-6 border border-white/10">
+                    <img 
+                      src="/cross-device-collaboration.jpeg" 
+                      alt="跨设备协同能力展示" 
+                      className="w-full max-w-3xl mx-auto rounded-2xl shadow-2xl"
+                    />
+                  </div>
+                </div>
+                
+                <div className="grid lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                  <div className="flex flex-col items-center space-y-3 bg-white/10 rounded-xl p-4">
+                    <div className="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center">
+                      <span className="text-2xl">📱</span>
+                    </div>
+                    <span className="text-white font-semibold">手机端录音</span>
+                    <span className="text-cyan-200 text-sm text-center">随时随地捕捉灵感</span>
+                  </div>
+                  
+                  <div className="flex flex-col items-center space-y-3 bg-white/10 rounded-xl p-4">
+                    <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center">
+                      <span className="text-2xl">💻</span>
+                    </div>
+                    <span className="text-white font-semibold">电脑端处理</span>
+                    <span className="text-blue-200 text-sm text-center">AI智能分析整理</span>
+                  </div>
+                  
+                  <div className="flex flex-col items-center space-y-3 bg-white/10 rounded-xl p-4">
+                    <div className="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center">
+                      <span className="text-2xl">☁️</span>
+                    </div>
+                    <span className="text-white font-semibold">云端同步</span>
+                    <span className="text-purple-200 text-sm text-center">多端实时共享</span>
+                  </div>
+                  
+                  <div className="flex flex-col items-center space-y-3 bg-white/10 rounded-xl p-4">
+                    <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center">
+                      <span className="text-2xl">🔄</span>
+                    </div>
+                    <span className="text-white font-semibold">协同办公</span>
+                    <span className="text-green-200 text-sm text-center">团队高效协作</span>
+                  </div>
+                </div>
               </div>
             </div>
             
