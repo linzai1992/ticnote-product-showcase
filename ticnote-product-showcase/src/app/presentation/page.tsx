@@ -194,7 +194,7 @@ const slides = [
         description: '自动提取核心内容，生成精准摘要，快速把握重点信息',
         icon: '📝',
         color: 'blue',
-        image: 'https://placehold.co/400x300?text=总结'
+        image: '/summary-feature.png'
       },
       {
         id: 2,
@@ -203,7 +203,7 @@ const slides = [
         description: '高精度语音识别，逐字逐句转录，支持多人对话和方言识别',
         icon: '🎙️',
         color: 'green',
-        image: 'https://placehold.co/400x300?text=转录'
+        image: '/transcription-feature.png'
       },
       {
         id: 3,
@@ -212,7 +212,7 @@ const slides = [
         description: '将内容转换为思维导图格式，层次分明，便于理解和记忆',
         icon: '🗺️',
         color: 'orange',
-        image: 'https://placehold.co/400x300?text=思维导图'
+        image: '/mindmap-feature.png'
       },
       {
         id: 4,
@@ -221,7 +221,7 @@ const slides = [
         description: 'AI深度分析内容，发现隐藏的关联和洞察，提供独特视角',
         icon: '💡',
         color: 'purple',
-        image: 'https://placehold.co/400x300?text=顿悟'
+        image: '/insight-feature.png'
       },
       {
         id: 5,
@@ -230,7 +230,7 @@ const slides = [
         description: '基于内容进行深入研究分析，生成专业报告和见解',
         icon: '🔬',
         color: 'red',
-        image: 'https://placehold.co/400x300?text=深度研究'
+        image: '/research-feature.png'
       },
       {
         id: 6,
@@ -239,7 +239,7 @@ const slides = [
         description: '将文字内容转化为专业播客，支持多种语音风格和背景音乐',
         icon: '🎧',
         color: 'teal',
-        image: 'https://placehold.co/400x300?text=播客'
+        image: '/podcast-feature.png'
       }
     ],
     gifUrl: '/shadow会议纪要.gif',
