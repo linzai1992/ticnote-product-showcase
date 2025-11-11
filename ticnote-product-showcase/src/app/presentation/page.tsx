@@ -126,7 +126,7 @@ const slides = [
   {
     id: 2,
     type: 'stats',
-    title: '核心技术指标',
+    title: 'TicNote - 硬件技术指标',
     stats: [
       { number: '120+', label: '支持语种\n及方言', icon: '🌍' },
       { number: '60+', label: '专业模板\n与词库', icon: '📚' },
@@ -138,7 +138,7 @@ const slides = [
   {
     id: 3,
     type: 'recording',
-    title: '智能录音核心',
+    title: 'TicNote - 录音体验',
     subtitle: 'AI驱动的专业录音体验',
     coreFeatures: [
       {
@@ -183,7 +183,7 @@ const slides = [
   {
     id: 4,
     type: 'meeting_features',
-    title: '会议纪要AI',
+    title: 'Shadow - 会议助手',
     subtitle: '一次录音，六种输出',
     description: 'AI自动分析会议内容，智能生成多种格式的会议纪要，满足不同场景需求',
     features: [
@@ -302,25 +302,17 @@ const slides = [
     bgGradient: 'from-cyan-900 via-blue-800 to-indigo-800'
   },
   {
-    id: 6,
+    id: 7,
     type: 'scenarios',
     title: '应用场景',
     scenarios: [
       {
-        title: '商务会议',
-        description: '自动记录会议要点，生成会议纪要，跟踪行动项执行',
-        icon: '💼',
-        color: 'blue',
-        category: '办公',
+        title: '医疗诊断',
+        description: '病历记录自动化，症状分析，诊疗建议辅助生成',
+        icon: '🏥',
+        color: 'teal',
+        category: '医疗',
         image: '/scene1.png'
-      },
-      {
-        title: '教育培训',
-        description: '课堂笔记自动整理，知识点提取，学习效果评估',
-        icon: '📚',
-        color: 'green',
-        category: '教育',
-        image: '/scene2.png'
       },
       {
         title: '新闻采访',
@@ -328,22 +320,30 @@ const slides = [
         icon: '🎤',
         color: 'red',
         category: '媒体',
+        image: '/scene2.png'
+      },
+      {
+        title: '商务会议',
+        description: '自动记录会议要点，生成会议纪要，跟踪行动项执行',
+        icon: '💼',
+        color: 'blue',
+        category: '办公',
         image: '/scene3.png'
       },
       {
-        title: '医疗诊断',
-        description: '病历记录自动化，症状分析，诊疗建议辅助生成',
-        icon: '🏥',
-        color: 'teal',
-        category: '医疗',
+        title: '教育培训',
+        description: '课堂笔记自动整理，知识点提取，学习效果评估',
+        icon: '📚',
+        color: 'green',
+        category: '教育',
         image: '/scene4.png'
       },
       {
-        title: '法律咨询',
-        description: '法律条文检索，案例分析，合同要点提取',
-        icon: '⚖️',
+        title: '金融分析',
+        description: '财务数据录入，市场分析记录，投资决策辅助',
+        icon: '📊',
         color: 'yellow',
-        category: '法律',
+        category: '金融',
         image: '/scene5.png'
       },
       {
@@ -358,7 +358,7 @@ const slides = [
     bgGradient: 'from-emerald-900 via-teal-800 to-cyan-800'
   },
   {
-    id: 7,
+    id: 6,
     type: 'product_comparison',
     title: '产品对比分析',
     subtitle: 'TicNote vs 传统录音设备',
@@ -576,14 +576,21 @@ const slides = [
                 <p className="text-xl text-blue-100 leading-relaxed max-w-lg">{slide.description}</p>
                 <div className="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
                   <span className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></span>
-                  <span className="text-white font-medium">专业能力 • 清晰价值体系</span>
+                  <span className="text-white font-medium">Take Note with TicNote</span>
                 </div>
               </div>
               {/* 产品标语 */}
               <div className="pt-4">
-                <p className="text-2xl font-semibold text-blue-300 italic">
-                  "Shadow AI, the next level of you."
-                </p>
+                <div className="flex items-center gap-3">
+                  <img 
+                    src="https://oci-useast-backend-public.dupdub.com/subtitles/image/4b18ee1a-2d4e-473b-9bd1-ca6e97597e3e.png" 
+                    alt="Magic Hat Icon" 
+                    className="w-8 h-8 object-contain"
+                  />
+                  <p className="text-2xl font-semibold text-blue-300 italic">
+                    Shadow AI, the next level of you.
+                  </p>
+                </div>
               </div>
             </div>
             
@@ -606,7 +613,7 @@ const slides = [
       case 'stats':
         return (
           <div className="space-y-16">
-            <h1 className="text-7xl font-bold text-white text-center mb-20">{slide.title}</h1>
+            <h1 className="text-6xl font-bold text-white text-center mb-20">{slide.title}</h1>
             
             {/* 硬件卖点网格布局 */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -876,7 +883,7 @@ const slides = [
                 <div className="grid grid-cols-2 gap-4">
                   {slide.features?.map((feature, index) => (
                     <div 
-                      key={feature.id}
+                      key={`meeting-${feature.id}`}
                       className={`group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-${feature.color}-500/50 transition-all duration-300 opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards] cursor-pointer hover:bg-white/10 hover:scale-105`}
                       style={{animationDelay: `${index * 0.1}s`}}
                       onClick={() => openImageModal(feature.image, feature.name)}
@@ -988,7 +995,7 @@ const slides = [
               <div className="grid lg:grid-cols-2 gap-12">
                 {slide.features?.map((feature, index) => (
                   <div 
-                    key={feature.id}
+                    key={`knowledge-${feature.id}`}
                     className={`group bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:border-${feature.color}-500/50 transition-all duration-300 opacity-0 animate-[fadeInUp_0.8s_ease-out_forwards] cursor-pointer hover:transform hover:scale-105`}
                     style={{animationDelay: `${index * 0.2}s`}}
                   >
@@ -1762,7 +1769,7 @@ const slides = [
 
       {/* Main Content */}
       <main className="flex-1 flex items-center justify-center px-16 py-24">
-        <div className="w-full max-w-7xl">
+        <div key={`slide-${currentSlide}-${slide.type}`} className="w-full max-w-7xl">
           {renderSlideContent()}
         </div>
       </main>
