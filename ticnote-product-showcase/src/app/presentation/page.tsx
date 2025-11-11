@@ -137,19 +137,6 @@ const slides = [
   },
   {
     id: 3,
-    type: 'features',
-    title: '核心功能特性',
-    features: [
-      '🎯 AI智能转写 - 支持120+语言方言，准确率99.5%+，实时转写无延迟',
-      '📋 智能摘要生成 - 自动提取关键信息，生成结构化会议纪要和行动项',
-      '🖱️ 多模态交互 - 语音、触控、手势多种交互方式，适应不同使用场景',
-      '☁️ 云端同步 - 实时云端备份，多设备无缝协作，数据永不丢失'
-    ],
-    highlight: '一次录音，多维度智能处理',
-    bgGradient: 'from-purple-900 via-blue-800 to-indigo-800'
-  },
-  {
-    id: 4,
     type: 'scenarios',
     title: '应用场景',
     scenarios: [
@@ -205,194 +192,7 @@ const slides = [
     bgGradient: 'from-emerald-900 via-teal-800 to-cyan-800'
   },
   {
-    id: 5,
-    type: 'technology',
-    title: '技术架构',
-    description: '基于最新AI技术栈构建的端到端解决方案',
-    techStack: [
-      {
-        category: 'AI引擎',
-        items: [
-          { name: 'Whisper-V3', description: 'OpenAI最新语音识别模型' },
-          { name: 'GPT-4 Turbo', description: '大语言模型理解与生成' },
-          { name: 'Custom NLP', description: '专业领域定制模型' }
-        ],
-        color: 'blue',
-        icon: '🧠'
-      },
-      {
-        category: '硬件平台',
-        items: [
-          { name: 'ARM Cortex-A78', description: '高性能低功耗处理器' },
-          { name: 'MEMS麦克风阵列', description: '6+2专业录音配置' },
-          { name: 'OLED触控屏', description: '2.5英寸高清显示' }
-        ],
-        color: 'green',
-        icon: '🔧'
-      },
-      {
-        category: '软件服务',
-        items: [
-          { name: 'React Native', description: '跨平台移动应用' },
-          { name: 'Node.js后端', description: '高并发API服务' },
-          { name: '微服务架构', description: 'Kubernetes容器化部署' }
-        ],
-        color: 'purple',
-        icon: '💻'
-      }
-    ],
-    bgGradient: 'from-gray-900 via-gray-800 to-slate-800'
-  },
-  {
-    id: 6,
-    type: 'comparison',
-    title: '竞品对比分析',
-    comparison: {
-      traditional: {
-        title: '传统录音方式',
-        items: [
-          '❌ 转写准确率低（85-90%）',
-          '❌ 需要后期处理，无法实时转写',
-          '⚠️ 仅支持10-20种主流语言',
-          '❌ 无智能摘要功能',
-          '⚠️ 续航8-12小时，需频繁充电',
-          '⚠️ 体积厚重，携带不便',
-          '💰 价格$100-200或$500-1000'
-        ]
-      },
-      ticnote: {
-        title: 'TicNote AI方案',
-        items: [
-          '✅ 超高准确率（99.5%+）',
-          '✅ 实时转写，毫秒级响应',
-          '✅ 支持120+语言及方言',
-          '✅ AI智能生成会议纪要和摘要',
-          '✅ 超长续航20+小时，持久使用',
-          '✅ 超薄设计仅3mm，轻巧便携',
-          '💰 性价比之选$299'
-        ]
-      }
-    },
-    bgGradient: 'from-indigo-900 via-purple-800 to-pink-800'
-  },
-  {
-    id: 7,
-    type: 'roadmap',
-    title: '产品路线图',
-    timeline: [
-      {
-        quarter: '2024 Q4',
-        title: 'MVP版本发布',
-        status: 'completed',
-        features: ['基础录音转写', '核心AI功能', '移动端App', 'Web管理后台'],
-        color: 'green'
-      },
-      {
-        quarter: '2025 Q1',
-        title: '硬件产品上市',
-        status: 'in-progress',
-        features: ['TicNote硬件发布', '多模态交互', '专业模板库', 'API开放平台'],
-        color: 'blue'
-      },
-      {
-        quarter: '2025 Q2',
-        title: '企业版推出',
-        status: 'planned',
-        features: ['企业级部署', '私有化方案', '定制化服务', '集成生态'],
-        color: 'purple'
-      },
-      {
-        quarter: '2025 Q3',
-        title: '全球化扩展',
-        status: 'planned',
-        features: ['多地区部署', '本地化适配', '合规认证', '渠道合作'],
-        color: 'orange'
-      }
-    ],
-    bgGradient: 'from-teal-900 via-green-800 to-emerald-800'
-  },
-  {
-    id: 8,
-    type: 'business',
-    title: '商业模式',
-    models: [
-      {
-        type: '硬件销售',
-        description: 'TicNote智能录音卡片一次性购买',
-        pricing: '$299',
-        features: ['终身免费转写', '基础AI功能', '个人云存储', '标准技术支持'],
-        color: 'blue',
-        popular: false
-      },
-      {
-        type: '订阅服务',
-        description: '按月/年订阅高级AI功能和存储',
-        pricing: '$9.99/月',
-        features: ['无限转写时长', '高级AI分析', '团队协作', '优先技术支持'],
-        color: 'green',
-        popular: true
-      },
-      {
-        type: '企业定制',
-        description: '针对企业需求的定制化解决方案',
-        pricing: '面议',
-        features: ['私有化部署', '定制化开发', '专属技术支持', 'SLA保障'],
-        color: 'purple',
-        popular: false
-      },
-      {
-        type: 'API服务',
-        description: '开放AI转写和分析能力给第三方',
-        pricing: '$0.02/分钟',
-        features: ['RESTful API', 'SDK支持', '弹性计费', '技术文档'],
-        color: 'orange',
-        popular: false
-      }
-    ],
-    bgGradient: 'from-rose-900 via-pink-800 to-red-800'
-  },
-  {
-    id: 9,
-    type: 'contact',
-    title: '联系我们',
-    subtitle: '开启AI录音新时代',
-    description: '加入TicNote生态，体验智能录音的无限可能',
-    contacts: [
-      {
-        type: '商务合作',
-        info: 'business@ticnote.ai',
-        icon: '💼',
-        color: 'blue'
-      },
-      {
-        type: '技术支持',
-        info: 'support@ticnote.ai',
-        icon: '🛠️',
-        color: 'green'
-      },
-      {
-        type: '媒体咨询',
-        info: 'press@ticnote.ai',
-        icon: '📰',
-        color: 'purple'
-      },
-      {
-        type: '投资洽谈',
-        info: 'invest@ticnote.ai',
-        icon: '💰',
-        color: 'yellow'
-      }
-    ],
-    social: [
-      { platform: 'GitHub', url: 'https://github.com/ticnote', icon: '🐙' },
-      { platform: 'Twitter', url: 'https://twitter.com/ticnote_ai', icon: '🐦' },
-      { platform: 'LinkedIn', url: 'https://linkedin.com/company/ticnote', icon: '💼' },
-      { platform: 'WeChat', url: 'ticnote_official', icon: '💬' }
-    ],
-    bgGradient: 'from-violet-900 via-purple-800 to-indigo-900'
-  },
-  {
-    id: 10,
+    id: 4,
     type: 'recording',
     title: '智能录音核心',
     subtitle: 'AI驱动的专业录音体验',
@@ -437,7 +237,7 @@ const slides = [
     bgGradient: 'from-emerald-900 via-teal-800 to-green-800'
   },
   {
-    id: 11,
+    id: 5,
     type: 'meeting_features',
     title: '会议纪要AI',
     subtitle: '一次录音，六种输出',
@@ -498,7 +298,7 @@ const slides = [
         image: 'https://placehold.co/400x300?text=发言统计'
       }
     ],
-    gifUrl: 'https://placehold.co/320x640?text=会议纪要GIF演示',
+    gifUrl: '/shadow会议纪要.gif',
     stats: {
       formats: '6种格式',
       generation: '1次生成',
@@ -507,7 +307,7 @@ const slides = [
     bgGradient: 'from-purple-900 via-indigo-800 to-blue-800'
   },
   {
-    id: 12,
+    id: 6,
     type: 'knowledge_base',
     title: '智能知识库',
     subtitle: 'AI驱动的文件管理系统',
@@ -558,7 +358,7 @@ const slides = [
     bgGradient: 'from-cyan-900 via-blue-800 to-indigo-800'
   },
   {
-    id: 13,
+    id: 7,
     type: 'product_comparison',
     title: '产品对比分析',
     subtitle: 'TicNote vs 传统录音设备',
@@ -583,7 +383,7 @@ const slides = [
     bgGradient: 'from-emerald-900 via-teal-800 to-cyan-800'
   },
   {
-    id: 14,
+    id: 8,
     type: 'product_evolution',
     title: '产品演进路线',
     subtitle: 'TicNote生态布局',
@@ -601,7 +401,7 @@ const slides = [
         {
           name: 'TicNote',
           subtitle: '超薄AI录音卡片',
-          image: 'https://placehold.co/400x400?text=TicNote',
+          image: '/TicNote.png',
           status: '已发布',
           year: '2025 Q2',
           position: '旗舰产品',
@@ -619,7 +419,7 @@ const slides = [
         {
           name: 'TicNote Lite',
           subtitle: '轻量级录音方案',
-          image: 'https://placehold.co/400x400?text=TicNote+Lite',
+          image: '/TicNote.png',
           status: '即将发布',
           year: '2025 Q4',
           position: '入门产品',
@@ -637,7 +437,7 @@ const slides = [
         {
           name: 'TicNote Pods',
           subtitle: 'AI智能录音耳机',
-          image: 'https://placehold.co/400x400?text=TicNote+Pods',
+          image: '/TicNote.png',
           status: '即将发布',
           year: '2025 Q4',
           position: '创新产品',
@@ -655,7 +455,7 @@ const slides = [
         {
           name: 'TicNote Watch',
           subtitle: 'AI健康智能手表',
-          image: 'https://placehold.co/400x400?text=TicNote+Watch',
+          image: '/TicNote.png',
           status: '规划中',
           year: '2026 Q1',
           position: '生态产品',
@@ -674,13 +474,13 @@ const slides = [
     bgGradient: 'from-blue-900 via-indigo-800 to-purple-800'
   },
   {
-    id: 15,
+    id: 9,
     type: 'partnership',
     title: '携手共创未来',
     subtitle: 'TicNote开放合作计划',
     description: '我们相信开放协作的力量，诚邀各界伙伴共建AI录音生态',
     partnership: {
-      image: 'https://placehold.co/1200x600?text=TicNote产品生态',
+      image: '/TicNote.png',
       opportunities: [
         {
           icon: '🤝',
