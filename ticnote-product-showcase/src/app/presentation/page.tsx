@@ -253,7 +253,7 @@ const slides = [
   {
     id: 5,
     type: 'knowledge_base',
-    title: '智能知识库',
+    title: 'Shadow - 知识库 & 跨文件管理',
     subtitle: 'AI驱动的文件管理系统',
     description: '将所有录音和文档转化为可搜索的知识库，AI助手随时为您解答',
     features: [
@@ -264,7 +264,7 @@ const slides = [
         description: '支持导入PDF、Word、Excel、PPT等多种格式文档，自动提取文本内容并建立索引',
         icon: '📁',
         color: 'blue',
-        image: 'https://placehold.co/400x300?text=文件导入'
+        image: '/file-import.png'
       },
       {
         id: 2,
@@ -273,7 +273,7 @@ const slides = [
         description: '基于知识库内容进行智能问答，快速找到所需信息，支持多轮对话和上下文理解',
         icon: '💬',
         color: 'green',
-        image: 'https://placehold.co/400x300?text=AI问答'
+        image: '/ai-qa.png'
       },
       {
         id: 3,
@@ -282,16 +282,16 @@ const slides = [
         description: '一次搜索，查遍所有文件。支持关键词、语义、时间等多维度检索',
         icon: '🔍',
         color: 'purple',
-        image: 'https://placehold.co/400x300?text=跨文件搜索'
+        image: '/cross-file-search-new.png'
       },
       {
         id: 3,
-        name: '知识图谱',
+        name: '知识库管理',
         title: '关联分析',
         description: 'AI自动分析文件间的关联关系，构建知识图谱，发现潜在联系',
         icon: '🕸️',
         color: 'orange',
-        image: 'https://placehold.co/400x300?text=知识图谱'
+        image: '/knowledge-management.png'
       }
     ],
     stats: {
@@ -312,7 +312,7 @@ const slides = [
         icon: '💼',
         color: 'blue',
         category: '办公',
-        image: 'https://placehold.co/400x300?text=商务会议场景'
+        image: '/scene1.png'
       },
       {
         title: '教育培训',
@@ -320,7 +320,7 @@ const slides = [
         icon: '📚',
         color: 'green',
         category: '教育',
-        image: 'https://placehold.co/400x300?text=教育培训场景'
+        image: '/scene2.png'
       },
       {
         title: '新闻采访',
@@ -328,7 +328,7 @@ const slides = [
         icon: '🎤',
         color: 'red',
         category: '媒体',
-        image: 'https://placehold.co/400x300?text=新闻采访场景'
+        image: '/scene3.png'
       },
       {
         title: '医疗诊断',
@@ -336,7 +336,7 @@ const slides = [
         icon: '🏥',
         color: 'teal',
         category: '医疗',
-        image: 'https://placehold.co/400x300?text=医疗诊断场景'
+        image: '/scene4.png'
       },
       {
         title: '法律咨询',
@@ -344,7 +344,7 @@ const slides = [
         icon: '⚖️',
         color: 'yellow',
         category: '法律',
-        image: 'https://placehold.co/400x300?text=法律咨询场景'
+        image: '/scene5.png'
       },
       {
         title: '创意写作',
@@ -352,7 +352,7 @@ const slides = [
         icon: '✍️',
         color: 'pink',
         category: '创作',
-        image: 'https://placehold.co/400x300?text=创意写作场景'
+        image: '/scene6.png'
       }
     ],
     bgGradient: 'from-emerald-900 via-teal-800 to-cyan-800'
@@ -365,19 +365,19 @@ const slides = [
     description: '全方位对比，看TicNote如何重新定义AI录音',
     comparison: {
       features: [
-        { name: 'AI转写准确率', advantage: '关键指标', ticnote: '✅ 99.5%+', competitor: '❌ 85-90%' },
-        { name: '实时转写', advantage: '效率提升', ticnote: '✅ 毫秒级响应', competitor: '❌ 需后期处理' },
-        { name: '支持语言数量', advantage: '覆盖广度', ticnote: '✅ 120+语言', competitor: '⚠️ 10-20种' },
-        { name: 'AI智能摘要', advantage: '智能化', ticnote: '✅ 6种格式', competitor: '❌ 无' },
-        { name: '讲话人识别', advantage: '会议记录', ticnote: '✅ 自动识别', competitor: '⚠️ 手动标注' },
-        { name: '知识库功能', advantage: '内容管理', ticnote: '✅ AI问答', competitor: '❌ 无' },
-        { name: '续航时间', advantage: '使用时长', ticnote: '✅ 20+小时', competitor: '⚠️ 8-12小时' },
-        { name: '产品厚度', advantage: '便携性', ticnote: '✅ 3mm超薄', competitor: '❌ 15mm+' },
-        { name: '价格', advantage: '性价比', ticnote: '✅ $299', competitor: '⚠️ $500+' }
+        { name: 'AI Agent', advantage: '智能助手', ticnote: '✅ 支持', competitor: '❌ 不支持' },
+        { name: 'AI智能总结', advantage: '内容提炼', ticnote: '✅ 支持', competitor: '✅ 支持' },
+        { name: 'AI智能转录', advantage: '语音识别', ticnote: '✅ 支持', competitor: '✅ 支持' },
+        { name: '120+语言翻译', advantage: '多语言', ticnote: '✅ 支持', competitor: '❌ 不支持' },
+        { name: 'AI思维引导', advantage: '思路整理', ticnote: '✅ 支持', competitor: '✅ 支持' },
+        { name: 'AI洞察(Aha时刻)', advantage: '深度分析', ticnote: '✅ 支持', competitor: '❌ 不支持' },
+        { name: 'AI深度研究', advantage: '资料整合', ticnote: '✅ 支持', competitor: '❌ 不支持' },
+        { name: 'AI深度思考', advantage: '逻辑推理', ticnote: '✅ 支持', competitor: '❌ 不支持' },
+        { name: '项目管理', advantage: '任务协作', ticnote: '✅ 支持', competitor: '❌ 不支持' }
       ],
       stats: {
         ticnote: { score: '9/9', rate: '100%' },
-        competitor: { score: '2/9', rate: '22%' }
+        competitor: { score: '3/9', rate: '33%' }
       }
     },
     bgGradient: 'from-emerald-900 via-teal-800 to-cyan-800'
@@ -390,7 +390,7 @@ const slides = [
     description: '从个人到企业，从录音到全场景AI助手',
     evolution: {
       dimensions: [
-        { icon: '🌐', name: '连接跃升', desc: '离线处理→云端协同→生态智联' },
+        { icon: '🌐', name: '连接跃升', desc: '本地存储→4G实时→全域互联' },
         { icon: '🧠', name: 'AI能力', desc: '被动记录→主动分析→预测决策' },
         { icon: '🎯', name: '场景拓展', desc: '低频会议→高频办公→全天生活' },
         { icon: '👥', name: '用户拓展', desc: '专业工具→大众助手→生活伴侣' }
@@ -404,70 +404,70 @@ const slides = [
           year: '2025 Q2',
           position: '旗舰产品',
           target: '商务人士、专业记者、内容创作者',
-          features: ['3mm超薄', 'Shadow AI', '25小时录音', '听筒/扬声器双模'],
+          features: ['3mm超薄', '影子AI', '25小时录音', '听筒/扬声器双模'],
           specs: {
-            material: '铝合金',
-            weight: '29g',
-            thickness: '3mm',
-            recording: '25小时单次录音',
-            standby: '20天待机',
-            mode: '听筒模式+扬声器模式'
+            材质: '铝合金',
+            重量: '29g',
+            厚度: '3mm',
+            录音时长: '25小时单次录音',
+            待机时长: '20天待机',
+            工作模式: '听筒模式+扬声器模式'
           },
-          colors: ['星夜黑', '月光银', '玫瑰金']
+          colors: ['曜石黑', '暮光蓝', '香槟金', '经典灰']
         },
         {
           name: 'TicNote Lite',
           subtitle: '轻量级录音方案',
-          image: '/TicNote.png',
+          image: '/TicNote Lite.png',
           status: '即将发布',
           year: '2025 Q4',
           position: '入门产品',
           target: '职场新人、学生群体、日常用户',
           features: ['自适应录音', '彩色外壳', '简化操作', '高性价比'],
           specs: {
-            material: '塑胶材质',
-            weight: '42g',
-            thickness: '5.8mm',
-            recording: '自适应录音模式',
-            design: '多彩外观设计'
+            材质: '塑胶材质',
+            重量: '42g',
+            厚度: '5.8mm',
+            录音模式: '自适应录音模式',
+            外观设计: '多彩外观设计'
           },
           colors: ['经典黑', '纯净白', '薄荷绿', '天空蓝', '薰衣草紫']
         },
         {
           name: 'TicNote Pods',
           subtitle: 'AI智能录音耳机',
-          image: '/TicNote.png',
+          image: '/TicNote Pods.png',
           status: '即将发布',
           year: '2025 Q4',
           position: '创新产品',
           target: '移动办公、商务人士、会议专家',
-          features: ['4G Cat.1联网', 'AI视图', 'AI速记', '50小时现场录音'],
+          features: ['4G联网', 'AI视图', 'AI速记', '50小时现场录音'],
           specs: {
-            connectivity: '4G Cat.1',
-            recording_local: '50小时现场录音',
-            recording_online: '3小时在线录音',
+            connectivity: '4G联网',
+            本地录音: '50小时现场录音',
+            在线录音: '3小时在线录音',
             standby: '45天待机时间',
-            ai_features: 'AI视图+AI速记+查找设备+AI问答'
+            AI功能: 'AI视图+AI速记+查找设备+AI问答'
           },
-          colors: ['经典白', '深空灰']
+          colors: ['海军蓝', '珍珠白']
         },
         {
           name: 'TicNote Watch',
           subtitle: 'AI健康智能手表',
-          image: '/TicNote.png',
-          status: '规划中',
+          image: '/TicNote Watch.png',
+          status: '研发中',
           year: '2026 Q1',
           position: '生态产品',
           target: '健康管理、运动监测、会议记录',
-          features: ['心率血氧监测', 'GPS步数追踪', 'AI教练', '现场会议录音'],
+          features: ['心率血氧监测', '全球定位步数追踪', 'AI教练', '现场会议录音'],
           specs: {
-            health: '心率+血氧+GPS+步数追踪',
-            recording: '20小时录音(现场会议)',
-            standby: '7天待机时间',
-            ai_features: 'AI教练+AI问答+查找设备',
-            extras: '睡眠分析+运动指导'
+            健康监测: '心率+血氧+全球定位+步数追踪',
+            录音时长: '20小时录音(现场会议)',
+            待机时长: '7天待机时间',
+            AI功能: 'AI教练+AI问答+查找设备',
+            附加功能: '睡眠分析+运动指导'
           },
-          colors: ['午夜黑', '星光色', '运动橙']
+          colors: ['午夜黑']
         }
       ]
     },
@@ -1429,18 +1429,18 @@ const slides = [
               <h3 className="text-3xl font-bold text-white text-center mb-8">🚀 技术演进时间线</h3>
               <div className="relative">
                 {/* 时间线连接线 */}
-                <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 transform -translate-y-1/2 hidden lg:block"></div>
+                <div className="absolute top-3 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 hidden lg:block"></div>
                 
                 <div className="grid lg:grid-cols-4 gap-8">
                   {/* TicNote */}
                   <div className="relative text-center">
-                    <div className="bg-green-500 w-6 h-6 rounded-full mx-auto mb-4 border-4 border-white shadow-lg"></div>
+                    <div className="bg-green-500 w-6 h-6 rounded-full mx-auto mb-4 border-4 border-white shadow-lg relative z-10"></div>
                     <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-green-500/30">
                       <h4 className="text-lg font-bold text-green-300 mb-2">TicNote</h4>
                       <p className="text-xs text-gray-300 mb-2">2025 Q2 已发布</p>
                       <div className="text-xs text-gray-400 space-y-1">
                         <div>• 3mm超薄铝合金</div>
-                        <div>• Shadow AI技术</div>
+                        <div>• 影子AI技术</div>
                         <div>• 25小时本地录音</div>
                       </div>
                     </div>
@@ -1479,7 +1479,7 @@ const slides = [
                     <div className="bg-blue-500 w-6 h-6 rounded-full mx-auto mb-4 border-4 border-white shadow-lg"></div>
                     <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-blue-500/30">
                       <h4 className="text-lg font-bold text-blue-300 mb-2">TicNote Watch</h4>
-                      <p className="text-xs text-gray-300 mb-2">2026 Q1 规划中</p>
+                      <p className="text-xs text-gray-300 mb-2">2026 Q1 研发中</p>
                       <div className="text-xs text-gray-400 space-y-1">
                         <div>• 心率血氧监测</div>
                         <div>• AI健康建议</div>
@@ -1497,6 +1497,7 @@ const slides = [
                 const statusColors = {
                   '已发布': 'bg-green-500/20 text-green-200 border-green-500/30',
                   '即将发布': 'bg-orange-500/20 text-orange-200 border-orange-500/30',
+                  '研发中': 'bg-purple-500/20 text-purple-200 border-purple-500/30',
                   '规划中': 'bg-blue-500/20 text-blue-200 border-blue-500/30',
                   '开发中': 'bg-yellow-500/20 text-yellow-200 border-yellow-500/30',
                   '概念阶段': 'bg-gray-500/20 text-gray-200 border-gray-500/30'
