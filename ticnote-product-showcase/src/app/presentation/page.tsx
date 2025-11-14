@@ -185,7 +185,7 @@ const slides = [
         }
       }
     ],
-    bgGradient: 'from-emerald-900 via-teal-800 to-green-800'
+    bgGradient: 'from-blue-900 via-purple-800 to-indigo-900'
   },
   {
     id: 4,
@@ -387,7 +387,7 @@ const slides = [
         image: '/scene6.png'
       }
     ],
-    bgGradient: 'from-emerald-900 via-teal-800 to-cyan-800'
+    bgGradient: 'from-blue-900 via-purple-800 to-indigo-900'
   },
   {
     id: 8,
@@ -461,7 +461,7 @@ const slides = [
         {
           name: 'TicNote Watch',
           subtitle: 'AI健康智能手表',
-          image: '/TicNote Watch.png',
+          image: 'https://oci-useast-backend-public.dupdub.com/subtitles/image/ebbcaa84-37ed-4333-86d1-90bd686cd6d6.jpeg',
           status: '研发中',
           year: '2026 Q1',
           position: '生态产品',
