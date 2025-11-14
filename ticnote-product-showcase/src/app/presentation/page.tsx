@@ -483,31 +483,31 @@ const slides = [
   {
     id: 9,
     type: 'partnership',
-    title: 'Lenovo × Mobvoi',
+    title: 'Mobvoi × TicNote',
     subtitle: '无限合作可能，共创智能未来',
-    description: '期待与联想集团深度合作，共同打造下一代智能办公解决方案',
+    description: '共同打造下一代智能办公解决方案',
     partnership: {
       image: '/final-page-image.jpeg',
       opportunities: [
         {
           icon: '💼',
           title: '企业级解决方案',
-          desc: '为联想企业客户提供定制化AI录音转写服务'
+          desc: '为企业客户提供定制化AI录音转写服务'
         },
         {
           icon: '🔧',
           title: '硬件深度集成',
-          desc: '与联想设备无缝集成，提供原生级用户体验'
+          desc: '与设备无缝集成，提供原生级用户体验'
         },
         {
           icon: '🌍',
           title: '全球市场拓展',
-          desc: '借助联想全球渠道，共同开拓国际AI办公市场'
+          desc: '借助全球渠道，共同开拓国际AI办公市场'
         }
       ],
       vision: {
-        title: '携手联想，智领未来',
-        subtitle: 'Together with Lenovo, Leading the Smart Future',
+        title: '智领未来',
+        subtitle: 'Leading the Smart Future',
         highlights: [
           '技术创新 - AI赋能办公',
           '深度合作 - 优势互补',
