@@ -331,7 +331,7 @@ const slides = [
         competitor: { score: '3/9', rate: '33%' }
       }
     },
-    bgGradient: 'from-emerald-900 via-teal-800 to-cyan-800'
+    bgGradient: 'from-purple-900 via-blue-800 to-indigo-800'
   },
   {
     id: 7,
