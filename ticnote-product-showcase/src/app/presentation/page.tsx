@@ -487,7 +487,7 @@ const slides = [
     subtitle: '无限合作可能，共创智能未来',
     description: '共同打造下一代智能办公解决方案',
     partnership: {
-      image: '/final-page-image.jpeg',
+      image: 'https://oci-useast-backend-public.dupdub.com/subtitles/image/ac9414f0-15fa-42b5-80ab-1fa21152056b.jpeg',
       opportunities: [
         {
           icon: '💼',
@@ -1689,7 +1689,7 @@ const slides = [
                 <div className="flex justify-center mb-8">
                   <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-6 border border-white/10">
                     <img 
-                      src="/cross-device-collaboration.jpeg" 
+                      src="https://oci-useast-backend-public.dupdub.com/subtitles/image/ffbb50d8-2b41-4db3-8b8b-58822c9f07fd.png" 
                       alt="跨设备协同能力展示" 
                       className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl"
                     />
