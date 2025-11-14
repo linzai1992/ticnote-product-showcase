@@ -461,7 +461,7 @@ const slides = [
         {
           name: 'TicNote Watch',
           subtitle: 'AI健康智能手表',
-          image: 'https://oci-useast-backend-public.dupdub.com/subtitles/image/ebbcaa84-37ed-4333-86d1-90bd686cd6d6.jpeg',
+          image: 'https://oci-useast-backend-public.dupdub.com/subtitles/image/0b0901eb-01cc-4398-9937-541bae54a4e0.png',
           status: '研发中',
           year: '2026 Q1',
           position: '生态产品',
