@@ -309,6 +309,31 @@ const slides = [
     bgGradient: 'from-cyan-900 via-blue-800 to-indigo-800'
   },
   {
+    id: 6,
+    type: 'product_comparison',
+    title: '产品对比分析',
+    subtitle: 'TicNote vs 传统录音设备',
+    description: '全方位对比，看TicNote如何重新定义AI录音',
+    comparison: {
+      features: [
+        { name: 'AI Agent', advantage: '智能助手', ticnote: '✅ 支持', competitor: '❌ 不支持' },
+        { name: 'AI智能总结', advantage: '内容提炼', ticnote: '✅ 支持', competitor: '✅ 支持' },
+        { name: 'AI智能转录', advantage: '语音识别', ticnote: '✅ 支持', competitor: '✅ 支持' },
+        { name: '120+语言翻译', advantage: '多语言', ticnote: '✅ 支持', competitor: '❌ 不支持' },
+        { name: 'AI思维引导', advantage: '思路整理', ticnote: '✅ 支持', competitor: '✅ 支持' },
+        { name: 'AI洞察(Aha时刻)', advantage: '深度分析', ticnote: '✅ 支持', competitor: '❌ 不支持' },
+        { name: 'AI深度研究', advantage: '资料整合', ticnote: '✅ 支持', competitor: '❌ 不支持' },
+        { name: 'AI深度思考', advantage: '逻辑推理', ticnote: '✅ 支持', competitor: '❌ 不支持' },
+        { name: '项目管理', advantage: '任务协作', ticnote: '✅ 支持', competitor: '❌ 不支持' }
+      ],
+      stats: {
+        ticnote: { score: '9/9', rate: '100%' },
+        competitor: { score: '3/9', rate: '33%' }
+      }
+    },
+    bgGradient: 'from-emerald-900 via-teal-800 to-cyan-800'
+  },
+  {
     id: 7,
     type: 'scenarios',
     title: '应用场景',
@@ -362,31 +387,6 @@ const slides = [
         image: '/scene6.png'
       }
     ],
-    bgGradient: 'from-emerald-900 via-teal-800 to-cyan-800'
-  },
-  {
-    id: 6,
-    type: 'product_comparison',
-    title: '产品对比分析',
-    subtitle: 'TicNote vs 传统录音设备',
-    description: '全方位对比，看TicNote如何重新定义AI录音',
-    comparison: {
-      features: [
-        { name: 'AI Agent', advantage: '智能助手', ticnote: '✅ 支持', competitor: '❌ 不支持' },
-        { name: 'AI智能总结', advantage: '内容提炼', ticnote: '✅ 支持', competitor: '✅ 支持' },
-        { name: 'AI智能转录', advantage: '语音识别', ticnote: '✅ 支持', competitor: '✅ 支持' },
-        { name: '120+语言翻译', advantage: '多语言', ticnote: '✅ 支持', competitor: '❌ 不支持' },
-        { name: 'AI思维引导', advantage: '思路整理', ticnote: '✅ 支持', competitor: '✅ 支持' },
-        { name: 'AI洞察(Aha时刻)', advantage: '深度分析', ticnote: '✅ 支持', competitor: '❌ 不支持' },
-        { name: 'AI深度研究', advantage: '资料整合', ticnote: '✅ 支持', competitor: '❌ 不支持' },
-        { name: 'AI深度思考', advantage: '逻辑推理', ticnote: '✅ 支持', competitor: '❌ 不支持' },
-        { name: '项目管理', advantage: '任务协作', ticnote: '✅ 支持', competitor: '❌ 不支持' }
-      ],
-      stats: {
-        ticnote: { score: '9/9', rate: '100%' },
-        competitor: { score: '3/9', rate: '33%' }
-      }
-    },
     bgGradient: 'from-emerald-900 via-teal-800 to-cyan-800'
   },
   {
@@ -521,7 +521,7 @@ const slides = [
 ];
   
   // 打开配图弹窗
-  const openImageModal = (image, title) => {
+  const openImageModal = (image: string, title: string) => {
     if (image) {
       setModalState({ isOpen: true, image, title });
     }
@@ -668,8 +668,8 @@ const slides = [
                     <div className="text-4xl font-black text-green-300 mb-2">20H</div>
                     <div className="text-2xl text-white font-semibold mb-3">超长续航</div>
                     <div className="space-y-1">
-                      <div className="text-lg text-blue-100">• 录音 20小时</div>
-                      <div className="text-lg text-blue-100">• 待机 30天</div>
+                      <div className="text-lg text-blue-100">● 录音 20小时</div>
+                      <div className="text-lg text-blue-100">● 待机 30天</div>
                     </div>
                   </div>
                   <div className="flex-1 flex justify-end">
@@ -724,7 +724,7 @@ const slides = [
                       </div>
                       {/* 数据传输动画点 */}
                       <div className="absolute top-1/2 -right-3 flex flex-col space-y-1">
-                        {[0, 0.3, 0.6].map((delay, i) => (
+                        {[0, 0.3, 0.6].map((delay: number, i: number) => (
                           <div 
                             key={i}
                             className="w-1 h-1 bg-yellow-400 rounded-full animate-pulse" 
@@ -747,18 +747,14 @@ const slides = [
             <div className="space-y-8">
               <h1 className="text-6xl font-bold text-white leading-tight">{slide.title}</h1>
               <div className="space-y-6">
-                {slide.features?.map((feature, index) => (
+                {slide.features?.map((feature: any, index: number) => (
                   <div key={index} className="flex items-start space-x-4 opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]" style={{animationDelay: `${index * 0.2}s`}}>
                     <div className="w-3 h-3 bg-white rounded-full mt-3 flex-shrink-0"></div>
                     <p className="text-xl text-gray-100 leading-relaxed">{feature}</p>
                   </div>
                 ))}
               </div>
-              {slide.highlight && (
-                <div className="inline-flex items-center px-6 py-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                  <span className="text-2xl font-bold text-green-300">{slide.highlight}</span>
-                </div>
-              )}
+              {/* Highlight section removed - not present in slide data structure */}
             </div>
             <div className="flex justify-center">
               <div className="w-80 h-80 bg-white/5 backdrop-blur-sm rounded-3xl border border-white/10 flex items-center justify-center">
@@ -779,7 +775,7 @@ const slides = [
 
             {/* 三大核心功能展示 */}
             <div className="space-y-12">
-              {slide.coreFeatures?.map((feature, index) => (
+              {slide.coreFeatures?.map((feature: any, index: number) => (
                 <div 
                   key={feature.id} 
                   className={`group grid grid-cols-12 gap-8 items-center opacity-0 animate-[fadeInUp_1s_ease-out_forwards] ${
@@ -806,7 +802,7 @@ const slides = [
                     
                     {/* 功能标签 */}
                     <div className="flex flex-wrap gap-3">
-                      {Object.entries(feature.stats).map(([key, value]) => (
+                      {Object.entries(feature.stats).map(([key, value]: [string, any]) => (
                         <span 
                           key={key}
                           className="px-4 py-2 bg-emerald-500/20 border border-emerald-500/30 rounded-full text-emerald-300 font-medium text-sm"
@@ -831,7 +827,7 @@ const slides = [
                         />
                         {/* 准确率标识 */}
                         <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-bold">
-                          转写准确率 >98%
+                          转写准确率 &gt;98%
                         </div>
                       </div>
                     )}
@@ -888,7 +884,7 @@ const slides = [
               <div className="space-y-6">
                 <h3 className="text-2xl font-bold text-white mb-8">六大核心功能</h3>
                 <div className="grid grid-cols-2 gap-4">
-                  {slide.features?.map((feature, index) => (
+                  {slide.features?.map((feature: any, index: number) => (
                     <div 
                       key={`meeting-${feature.id}`}
                       className={`group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-${feature.color}-500/50 transition-all duration-300 opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards] cursor-pointer hover:bg-white/10 hover:scale-105`}
@@ -1000,7 +996,7 @@ const slides = [
             <div className="space-y-16">
               {/* 功能展示网格 */}
               <div className="grid lg:grid-cols-2 gap-12">
-                {slide.features?.map((feature, index) => (
+                {slide.features?.map((feature: any, index: number) => (
                   <div 
                     key={`knowledge-${feature.id}`}
                     className={`group bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:border-${feature.color}-500/50 transition-all duration-300 opacity-0 animate-[fadeInUp_0.8s_ease-out_forwards] cursor-pointer hover:transform hover:scale-105`}
@@ -1043,33 +1039,35 @@ const slides = [
                 ))}
               </div>
               
-              {/* 统计数据展示 */}
+              {/* 统计数据展示 - 仅当stats是对象且包含这些字段时显示 */}
+              {slide.stats && typeof slide.stats === 'object' && !Array.isArray(slide.stats) && 'formats' in slide.stats && (
               <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
                 <h3 className="text-2xl font-bold text-white text-center mb-8">核心技术指标</h3>
                 <div className="grid grid-cols-3 gap-8">
                   <div className="text-center space-y-2">
                     <div className="text-4xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                      {slide.stats?.formats}
+                      {(slide.stats as any).formats}
                     </div>
                     <div className="text-gray-300 font-medium">支持格式</div>
-                    <div className="text-sm text-gray-400">PDF•Word•Excel•PPT等</div>
+                    <div className="text-sm text-gray-400">PDF / Word / Excel / PPT等</div>
                   </div>
                   <div className="text-center space-y-2">
                     <div className="text-4xl font-black bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
-                      {slide.stats?.capacity}
+                      {(slide.stats as any).capacity}
                     </div>
                     <div className="text-gray-300 font-medium">存储容量</div>
-                    <div className="text-sm text-gray-400">云端存储•自动扩展</div>
+                    <div className="text-sm text-gray-400">云端存储 / 自动扩展</div>
                   </div>
                   <div className="text-center space-y-2">
                     <div className="text-4xl font-black bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                      {slide.stats?.speed}
+                      {(slide.stats as any).speed}
                     </div>
                     <div className="text-gray-300 font-medium">检索速度</div>
-                    <div className="text-sm text-gray-400">AI智能•即时响应</div>
+                    <div className="text-sm text-gray-400">AI智能 / 即时响应</div>
                   </div>
                 </div>
               </div>
+              )}
               
               {/* 工作流程展示 */}
               <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-3xl p-8 border border-cyan-500/20">
@@ -1129,12 +1127,11 @@ const slides = [
           <div className="text-center space-y-12">
             <h1 className="text-6xl font-bold text-white mb-16">{slide.title}</h1>
             <div className="grid lg:grid-cols-2 gap-16">
-              {slide.specs?.map((spec, index) => (
+              {(slide as any).specs && typeof (slide as any).specs === 'object' && Object.entries((slide as any).specs as Record<string, any>).map(([key, value], index: number) => (
                 <div key={index} className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
                   <div className="text-center space-y-4">
-                    <div className="text-6xl font-black text-white">{spec.value}</div>
-                    <div className="text-2xl font-semibold text-orange-200">{spec.label}</div>
-                    <div className="text-lg text-gray-300">{spec.desc}</div>
+                    <div className="text-6xl font-black text-white">{value}</div>
+                    <div className="text-2xl font-semibold text-orange-200">{key}</div>
                   </div>
                 </div>
               ))}
@@ -1215,7 +1212,7 @@ const slides = [
                   
                   {/* 对比项目 */}
                   <div className="divide-y divide-white/10">
-                    {slide.comparison?.features?.map((feature, index) => (
+                    {slide.comparison?.features?.map((feature: any, index: number) => (
                       <div 
                         key={index}
                         className={`grid grid-cols-3 p-4 hover:bg-white/5 transition-colors duration-300 opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]`}
@@ -1333,7 +1330,7 @@ const slides = [
             
             {/* 应用场景网格 */}
             <div className="grid lg:grid-cols-3 gap-8">
-              {slide.scenarios?.map((scenario, index) => (
+              {slide.scenarios?.map((scenario: any, index: number) => (
                 <div key={index} className={`bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 hover:bg-white/10 transition-all duration-300 transform hover:scale-105`}>
                   {/* 场景图片 */}
                   <div className="relative h-48 overflow-hidden">
@@ -1392,27 +1389,45 @@ const slides = [
           </div>
         );
 
-      case 'comparison':
+      case 'product_comparison':
         return (
           <div className="space-y-12">
             <h1 className="text-6xl font-bold text-white text-center mb-16">{slide.title}</h1>
-            <div className="grid lg:grid-cols-2 gap-16">
-              <div className="bg-red-900/20 backdrop-blur-sm rounded-3xl p-8 border border-red-500/20">
-                <h3 className="text-3xl font-bold text-red-300 mb-8 text-center">{slide.comparison?.traditional.title}</h3>
-                <div className="space-y-4">
-                  {slide.comparison?.traditional.items.map((item, index) => (
-                    <div key={index} className="text-xl text-gray-300 leading-relaxed">{item}</div>
-                  ))}
-                </div>
+            <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left p-4 text-xl text-white">功能</th>
+                      <th className="text-left p-4 text-xl text-white">优势</th>
+                      <th className="text-center p-4 text-xl text-green-400">TicNote</th>
+                      <th className="text-center p-4 text-xl text-gray-400">竞品</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {(slide as any).comparison?.features.map((feature: any, index: number) => (
+                      <tr key={index} className="border-b border-white/10 hover:bg-white/5 transition-colors">
+                        <td className="p-4 text-lg text-gray-200">{feature.name}</td>
+                        <td className="p-4 text-lg text-gray-300">{feature.advantage}</td>
+                        <td className="p-4 text-center text-lg">{feature.ticnote}</td>
+                        <td className="p-4 text-center text-lg">{feature.competitor}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
-              <div className="bg-green-900/20 backdrop-blur-sm rounded-3xl p-8 border border-green-500/20">
-                <h3 className="text-3xl font-bold text-green-300 mb-8 text-center">{slide.comparison?.ticnote.title}</h3>
-                <div className="space-y-4">
-                  {slide.comparison?.ticnote.items.map((item, index) => (
-                    <div key={index} className="text-xl text-gray-300 leading-relaxed">{item}</div>
-                  ))}
+              {(slide as any).comparison?.stats && (
+                <div className="grid grid-cols-2 gap-8 mt-8">
+                  <div className="text-center space-y-2">
+                    <div className="text-4xl font-black text-green-400">{(slide as any).comparison.stats.ticnote.score}</div>
+                    <div className="text-gray-300">TicNote 支持率: {(slide as any).comparison.stats.ticnote.rate}</div>
+                  </div>
+                  <div className="text-center space-y-2">
+                    <div className="text-4xl font-black text-gray-400">{(slide as any).comparison.stats.competitor.score}</div>
+                    <div className="text-gray-300">竞品 支持率: {(slide as any).comparison.stats.competitor.rate}</div>
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         );
@@ -1429,7 +1444,7 @@ const slides = [
             
             {/* 演进维度 */}
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-              {slide.evolution?.dimensions.map((dimension, index) => (
+              {slide.evolution?.dimensions.map((dimension: any, index: number) => (
                 <div key={index} className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/10 text-center hover:bg-white/10 transition-all duration-300">
                   <div className="text-3xl mb-2">{dimension.icon}</div>
                   <h3 className="text-lg font-bold text-white mb-2">{dimension.name}</h3>
@@ -1453,9 +1468,9 @@ const slides = [
                       <h4 className="text-lg font-bold text-green-300 mb-2">TicNote</h4>
                       <p className="text-xs text-gray-300 mb-2">2025 Q2 已发布</p>
                       <div className="text-xs text-gray-400 space-y-1">
-                        <div>• 3mm超薄铝合金</div>
-                        <div>• 影子AI技术</div>
-                        <div>• 25小时本地录音</div>
+                        <div>● 3mm超薄铝合金</div>
+                        <div>● 影子AI技术</div>
+                        <div>● 25小时本地录音</div>
                       </div>
                     </div>
                   </div>
@@ -1467,9 +1482,9 @@ const slides = [
                       <h4 className="text-lg font-bold text-orange-300 mb-2">TicNote Lite</h4>
                       <p className="text-xs text-gray-300 mb-2">2025 Q4 即将发布</p>
                       <div className="text-xs text-gray-400 space-y-1">
-                        <div>• 5.8mm塑胶外壳</div>
-                        <div>• 自适应录音</div>
-                        <div>• 五色可选设计</div>
+                        <div>● 5.8mm塑胶外壳</div>
+                        <div>● 自适应录音</div>
+                        <div>● 五色可选设计</div>
                       </div>
                     </div>
                   </div>
@@ -1481,9 +1496,9 @@ const slides = [
                       <h4 className="text-lg font-bold text-orange-300 mb-2">TicNote Pods</h4>
                       <p className="text-xs text-gray-300 mb-2">2025 Q4 即将发布</p>
                       <div className="text-xs text-gray-400 space-y-1">
-                        <div>• 4G Cat.1连接</div>
-                        <div>• AI视图+速记</div>
-                        <div>• 50小时续航</div>
+                        <div>● 4G Cat.1连接</div>
+                        <div>● AI视图+速记</div>
+                        <div>● 50小时续航</div>
                       </div>
                     </div>
                   </div>
@@ -1495,9 +1510,9 @@ const slides = [
                       <h4 className="text-lg font-bold text-blue-300 mb-2">TicNote Watch</h4>
                       <p className="text-xs text-gray-300 mb-2">2026 Q1 研发中</p>
                       <div className="text-xs text-gray-400 space-y-1">
-                        <div>• 心率血氧监测</div>
-                        <div>• AI健康建议</div>
-                        <div>• 20小时录音</div>
+                        <div>● 心率血氧监测</div>
+                        <div>● AI健康建议</div>
+                        <div>● 20小时录音</div>
                       </div>
                     </div>
                   </div>
@@ -1507,7 +1522,7 @@ const slides = [
             
             {/* 产品矩阵 */}
             <div className="grid lg:grid-cols-2 gap-8">
-              {slide.evolution?.products.map((product, index) => {
+              {slide.evolution?.products.map((product: any, index: number) => {
                 const statusColors = {
                   '已发布': 'bg-green-500/20 text-green-200 border-green-500/30',
                   '即将发布': 'bg-orange-500/20 text-orange-200 border-orange-500/30',
@@ -1558,7 +1573,7 @@ const slides = [
                       <div className="space-y-2">
                         <h4 className="text-white font-semibold text-sm">核心特性：</h4>
                         <div className="flex flex-wrap gap-1">
-                          {product.features.map((feature, fIndex) => (
+                          {product.features.map((feature: string, fIndex: number) => (
                             <span key={fIndex} className="text-xs bg-white/10 text-gray-300 px-2 py-1 rounded-full">
                               {feature}
                             </span>
@@ -1571,7 +1586,7 @@ const slides = [
                         <div className="space-y-2">
                           <h4 className="text-white font-semibold text-sm">技术规格：</h4>
                           <div className="grid grid-cols-1 gap-1 text-xs">
-                            {Object.entries(product.specs).map(([key, value], sIndex) => {
+                            {Object.entries(product.specs).map(([key, value]: [string, any], sIndex: number) => {
                               const labels = {
                                 material: '材质',
                                 weight: '重量',
@@ -1601,7 +1616,7 @@ const slides = [
                       <div className="space-y-2">
                         <h4 className="text-white font-semibold text-sm">配色选择：</h4>
                         <div className="flex flex-wrap gap-1">
-                          {product.colors.map((color, cIndex) => (
+                          {product.colors.map((color: string, cIndex: number) => (
                             <span key={cIndex} className="text-xs bg-gray-700/50 text-gray-300 px-2 py-1 rounded">
                               {color}
                             </span>
@@ -1632,30 +1647,6 @@ const slides = [
                   <div className="text-sm text-gray-400">创新可能</div>
                 </div>
               </div>
-            </div>
-          </div>
-        );
-
-      case 'roadmap':
-        return (
-          <div className="text-center space-y-12">
-            <h1 className="text-6xl font-bold text-white mb-16">{slide.title}</h1>
-            <div className="space-y-8">
-              {slide.timeline?.map((item, index) => (
-                <div key={index} className="flex items-center justify-between bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                  <div className="text-left">
-                    <div className="text-2xl font-bold text-white">{item.title}</div>
-                    <div className="text-lg text-gray-300">{item.phase}</div>
-                  </div>
-                  <div className={`px-6 py-2 rounded-full text-sm font-medium ${
-                    item.status === 'completed' ? 'bg-green-500/20 text-green-300 border border-green-500/30' :
-                    item.status === 'current' ? 'bg-blue-500/20 text-blue-300 border border-blue-500/30' :
-                    'bg-gray-500/20 text-gray-300 border border-gray-500/30'
-                  }`}>
-                    {item.status === 'completed' ? '已完成' : item.status === 'current' ? '进行中' : '计划中'}
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         );
@@ -1743,7 +1734,7 @@ const slides = [
             
             {/* 合作机会展示 */}
             <div className="grid lg:grid-cols-3 gap-8 mb-16">
-              {slide.partnership?.opportunities.map((opportunity, index) => (
+              {slide.partnership?.opportunities.map((opportunity: any, index: number) => (
                 <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
                   <div className="text-5xl mb-4 text-center">{opportunity.icon}</div>
                   <h3 className="text-xl font-bold text-white mb-3 text-center">{opportunity.title}</h3>
@@ -1761,7 +1752,7 @@ const slides = [
                 </div>
                 
                 <div className="grid lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                  {slide.partnership?.vision.highlights.map((highlight, index) => (
+                  {slide.partnership?.vision.highlights.map((highlight: string, index: number) => (
                     <div key={index} className="flex items-center space-x-3 bg-white/10 rounded-xl p-4">
                       <div className="w-3 h-3 bg-blue-400 rounded-full flex-shrink-0"></div>
                       <span className="text-white text-lg">{highlight}</span>
