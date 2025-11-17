@@ -1456,7 +1456,11 @@ const slides = [
             {/* 技术演进时间线 */}
             <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 backdrop-blur-sm rounded-3xl p-8 border border-white/10 mb-16">
               <h3 className="text-3xl font-bold text-white text-center mb-8">🚀 技术演进时间线</h3>
-              <div className="relative">
+              
+              {/* 产品发布线 */}
+              <div className="mb-12">
+                <h4 className="text-xl font-bold text-blue-300 text-center mb-6">📱 产品发布线</h4>
+                <div className="relative">
                 {/* 时间线连接线 */}
                 <div className="absolute top-3 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 hidden lg:block"></div>
                 
@@ -1513,6 +1517,104 @@ const slides = [
                         <div>● 心率血氧监测</div>
                         <div>● AI健康建议</div>
                         <div>● 20小时录音</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* 战略演进线 */}
+              <div className="mt-12">
+                <h4 className="text-xl font-bold text-purple-300 text-center mb-6">🚀 战略演进线</h4>
+                <div className="relative">
+                  {/* 战略时间线连接线 */}
+                  <div className="absolute top-3 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 hidden lg:block"></div>
+                  
+                  <div className="grid lg:grid-cols-3 gap-8">
+                    {/* 互联生态阶段 */}
+                    <div className="relative text-center">
+                      <div className="bg-purple-500 w-6 h-6 rounded-full mx-auto mb-4 border-4 border-white shadow-lg relative z-10"></div>
+                      <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-purple-500/30">
+                        <h4 className="text-lg font-bold text-purple-300 mb-2">互联生态阶段</h4>
+                        <p className="text-xs text-gray-300 mb-2">2026 H1</p>
+                        <p className="text-xs text-purple-200 mb-3 font-medium">核心：从独立设备 → 互联生态</p>
+                        <div className="text-xs text-gray-400 space-y-1">
+                          <div>● 支持 eSIM + 4G 独立联网</div>
+                          <div>● 多模态感知：语音+图像融合识别</div>
+                          <div>● Pods/Lite/Watch 跨设备无缝切换</div>
+                          <div>● TicNote Cloud 三端联动</div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* 协同平台阶段 */}
+                    <div className="relative text-center">
+                      <div className="bg-blue-500 w-6 h-6 rounded-full mx-auto mb-4 border-4 border-white shadow-lg relative z-10"></div>
+                      <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-blue-500/30">
+                        <h4 className="text-lg font-bold text-blue-300 mb-2">协同平台阶段</h4>
+                        <p className="text-xs text-gray-300 mb-2">2026 H2</p>
+                        <p className="text-xs text-blue-200 mb-3 font-medium">核心：从个体智能 → 群体协同</p>
+                        <div className="text-xs text-gray-400 space-y-1">
+                          <div>● 推出 TicNote OS</div>
+                          <div>● Agent Hub 多个专属 AI 智能体协作</div>
+                          <div>● Project Memory 3.0 长期语义学习</div>
+                          <div>● 第三方知识库接入（Notion/Zoom/Feishu）</div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* 智能体系统阶段 */}
+                    <div className="relative text-center">
+                      <div className="bg-cyan-500 w-6 h-6 rounded-full mx-auto mb-4 border-4 border-white shadow-lg relative z-10"></div>
+                      <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-cyan-500/30">
+                        <h4 className="text-lg font-bold text-cyan-300 mb-2">智能体系统阶段</h4>
+                        <p className="text-xs text-gray-300 mb-2">2027</p>
+                        <p className="text-xs text-cyan-200 mb-3 font-medium">核心：从效率工具 → 智能操作系统</p>
+                        <div className="text-xs text-gray-400 space-y-1">
+                          <div>● TicNote OS + Agent Hub</div>
+                          <div>● Shadow AI 多智能体协同网络</div>
+                          <div>● Project Memory 3.5 组织级知识图谱</div>
+                          <div>● TicNote Open Platform 第三方生态</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* 愿景方向 - 大气展示 */}
+                  <div className="mt-16">
+                    <div className="relative">
+                      {/* 背景光晕效果 */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-purple-500/30 to-blue-500/20 blur-2xl rounded-full"></div>
+                      
+                      {/* 主内容区 */}
+                      <div className="relative text-center bg-gradient-to-br from-gray-900/95 via-gray-800/95 to-gray-900/95 backdrop-blur-xl rounded-3xl py-16 px-12 border border-cyan-400/30 shadow-2xl">
+                        {/* 标题部分 */}
+                        <div className="mb-8">
+                          <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-purple-300 to-blue-300 mb-4 tracking-wide">愿景方向</h3>
+                          <div className="w-20 h-0.5 bg-gradient-to-r from-cyan-400 via-purple-400 to-blue-400 mx-auto rounded-full mb-6"></div>
+                        </div>
+                        
+                        {/* 核心愿景 */}
+                        <div className="space-y-4">
+                          <h2 className="text-3xl font-bold text-white tracking-wider mb-2">Cognitive OS for Humans</h2>
+                          <p className="text-lg text-cyan-200 font-medium mb-6">为人类构建认知操作系统</p>
+                          
+                          {/* 装饰线条 */}
+                          <div className="flex justify-center items-center space-x-3 my-8">
+                            <div className="w-8 h-px bg-gradient-to-r from-transparent to-cyan-400"></div>
+                            <div className="w-3 h-3 border-2 border-cyan-400 rounded-full bg-cyan-400/20"></div>
+                            <div className="w-16 h-px bg-gradient-to-r from-cyan-400 via-purple-400 to-blue-400"></div>
+                            <div className="w-3 h-3 border-2 border-purple-400 rounded-full bg-purple-400/20"></div>
+                            <div className="w-8 h-px bg-gradient-to-r from-blue-400 to-transparent"></div>
+                          </div>
+                        </div>
+                        
+                        {/* 底部光点动画 */}
+                        <div className="flex justify-center space-x-2 mt-8">
+                          <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse"></div>
+                          <div className="w-1.5 h-1.5 bg-purple-400 rounded-full animate-pulse" style={{animationDelay: '0.3s'}}></div>
+                          <div className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse" style={{animationDelay: '0.6s'}}></div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1649,6 +1751,7 @@ const slides = [
               </div>
             </div>
           </div>
+        </div>
         );
 
       case 'partnership':
